@@ -27,7 +27,6 @@ print(df.describe())
 print(df[["Quantity","UnitPrice","ItemsInCart","TotalPrice"]].agg(["count","mean","median"]))
 
 # Histogram of Quantity
-print("Histogram of Quantity")
 plt.figure(figsize=(8,6))
 sns.histplot(df["Quantity"],discrete=True,color="seagreen",edgecolor="purple")
 plt.title("distribution of Quantity")
@@ -38,7 +37,6 @@ plt.savefig(os.path.join(CHARTS,r"Quantity_distribution.png"),dpi=300,bbox_inche
 plt.show()
 
 # Histogram of UnitPrice
-print("Histogram of UnitPrice")
 plt.figure(figsize=(8,6))
 sns.histplot(df["UnitPrice"],bins=20,color="orange",edgecolor="purple")
 plt.title("distribution of UnitPrice")
@@ -49,7 +47,6 @@ plt.savefig(os.path.join(CHARTS,r"UnitPrice_distribution.png"),dpi=300,bbox_inch
 plt.show()
 
 # Histogram of ItemsInCart
-print("Histogram of ItemsInCart")
 plt.figure(figsize=(8,6))
 sns.histplot(df["ItemsInCart"],discrete=True,color="lightblue",edgecolor="purple")
 plt.title("distribution of ItemsInCart")
@@ -60,7 +57,6 @@ plt.savefig(os.path.join(CHARTS,r"ItemsInCart_distribution.png"),dpi=300,bbox_in
 plt.show()
 
 # Histogram of TotalPrice
-print("Histogram of TotalPrice")
 plt.figure(figsize=(8,6))
 sns.histplot(df["TotalPrice"],bins=20,color="yellow",edgecolor="purple")
 plt.title("distribution of TotalPrice")
